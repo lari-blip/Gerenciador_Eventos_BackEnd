@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nome": "Administrador",
+    "email": "admin@gmail.com",
+    "password": "$2a$10$K9qDGP/djgMFoQXMsd78o.o4sRDfjq3FyfKUAJy1s9nV0Uj8zpsDm"
+  },
+  {
+    "id": 2,
+    "nome": "Administrador",
+    "email": "lari@nekigmail.com",
+    "password": "$2a$10$B4KFXrCDwhdIQQbUhvU/GOlZXxnL3.rXpA4/0yx0/Mvz.HwnsZKYy"
+  }
+]
