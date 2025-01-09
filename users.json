@@ -4,5 +4,11 @@
     "nome": "Administrador",
     "email": "lari@nekigmail.com",
     "password": "$2a$10$xteA2xP7hQRjQ0OFpf7.cOg5BHu3dF1ntgpIlho/wglej9WO5/eWS"
+  },
+  {
+    "id": 2,
+    "nome": "Administrador Teste",
+    "email": "admin@teste.com",
+    "password": "$2a$10$yje5ISxx6VSpnsuyCY/tIuRvA0cIbpseaUsFkkRAA3/KbE/cHevIe"
   }
 ]

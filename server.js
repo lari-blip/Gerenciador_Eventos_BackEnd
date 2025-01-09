@@ -162,6 +162,27 @@ app.put('/eventos/:eventoId', (req, res) => {
   res.status(200).json(eventoAtualizado);
 });
 
+// Exclusão de evento
+app.delete('/eventos/:eventoId', (req, res) => {
+  const eventoId = parseInt(req.params.eventoId, 10);
+  const eventos = getEventos();
+
+  // Encontra o índice do evento a ser removido
+  const eventoIndex = eventos.findIndex(evento => evento.id === eventoId);
+
+  if (eventoIndex === -1) {
+    return res.status(404).json({ message: 'Evento não encontrado' });
+  }
+
+  // Remove o evento do array
+  eventos.splice(eventoIndex, 1);
+
+  // Salva a lista de eventos atualizada
+  saveEventos(eventos);
+
+  res.status(200).json({ message: 'Evento excluído com sucesso' });
+});
+
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
